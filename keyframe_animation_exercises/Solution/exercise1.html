@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercise 1</title>
+    <style type="text/css">
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column;
+        flex-flow: column;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background: #222;
+      }
+      .title {
+        font: 2.5em "Comic Sans MS", san-serif;
+        color: white;
+        text-shadow: 2px 2px 2px gray;
+        margin-bottom: 20px;
+      }
+	    .lightbox,
+	    .poster {
+		    width: 184px;
+		    height: 275px;
+	    }
+	    .lightbox {
+	      box-shadow: 0 0 0 1px white, 0 0 0 4px black, 0 0 20px 8px yellow;
+	      overflow: hidden;
+	    }
+	    .poster {
+        background-size: 100% 100%;
+	    }
+	    .posters {
+	      position: relative;
+	      -webkit-animation: posterSlide 15s ease infinite;
+	      animation: posterSlide 15s ease infinite;
+	    }
+			.poster:nth-child(1)  {
+			  background-image: url('ironman.jpg');
+			}
+			.poster:nth-child(2) {
+        background-image: url('matrix.jpg');
+			}
+			.poster:nth-child(3) {
+        background-image: url('jurassic_park.jpg');
+			}
+			.poster:nth-child(4) {
+        background-image: url('avatar.jpg');
+			}
+      .poster:nth-child(5) {
+        background-image: url('kung_fu_panda.jpg');
+      }
+      .poster:nth-child(6) {
+        background-image: url('ironman.jpg');
+      }
+      @-webkit-keyframes posterSlide {
+        0%, 5% {
+          top: 0px;
+        }
+        15%, 25% {
+          top: -webkit-calc(-1*275px);
+          top: calc(-1*275px);
+        }
+        35%, 45% {
+          top: -webkit-calc(-2*275px);
+          top: calc(-2*275px);
+        }
+        55%, 65% {
+          top: -webkit-calc(-3*275px);
+          top: calc(-3*275px);
+        }
+        75%, 85% {
+          top: -webkit-calc(-4*275px);
+          top: calc(-4*275px);
+        }
+        95%, 100% {
+          top: -webkit-calc(-5*275px);
+          top: calc(-5*275px);
+        }
+      }
+      @keyframes posterSlide {
+        0%, 5% {
+          top: 0px;
+        }
+        15%, 25% {
+          top: -webkit-calc(-1*275px);
+          top: calc(-1*275px);
+        }
+        35%, 45% {
+          top: -webkit-calc(-2*275px);
+          top: calc(-2*275px);
+        }
+        55%, 65% {
+          top: -webkit-calc(-3*275px);
+          top: calc(-3*275px);
+        }
+        75%, 85% {
+          top: -webkit-calc(-4*275px);
+          top: calc(-4*275px);
+        }
+        95%, 100% {
+          top: -webkit-calc(-5*275px);
+          top: calc(-5*275px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">Movie posters</div>
+	  <div class="lightbox">
+	    <div class="posters">
+	      <div class="poster"></div>
+	      <div class="poster"></div>
+	      <div class="poster"></div>
+	      <div class="poster"></div>
+	      <div class="poster"></div>
+        <div class="poster"></div>
+      </div>
+	  </div>
+  </body>
+</html>
+    
