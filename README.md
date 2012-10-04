@@ -1,5 +1,4 @@
-<h2>Painting</h2>
+<h2>Transitions, Transforms, and Animations</h2>
 <p>
-  Finishing the rendering process with a coat of paint.<br>
-  Gradients, box shadows, and pretty round corners.
+  Figuring out some cool CSS3 animations and transforms.  Cool stuff.
 </p>
