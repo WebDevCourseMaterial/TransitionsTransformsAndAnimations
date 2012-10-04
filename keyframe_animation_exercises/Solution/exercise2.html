@@ -88,6 +88,7 @@
         text-align: center;
         font: 8em/300px "Comic Sans MS", san-serif;
         text-shadow: 2px 2px 5px gray;
+        opacity: 0.9;
       }
       .cube {
         /*
@@ -98,17 +99,23 @@
         -webkit-animation: rotateAboutX 5s linear infinite;
         animation: rotateAboutX 5s linear infinite;
         */
+        /*
         -webkit-animation: rotateAboutY 5s linear 0 1, rotateAboutX 5s linear 5s infinite;
         animation: rotateAboutY 5s linear 0 1, rotateAboutX 5s linear 5s infinite;
+        */
+        
+        -webkit-animation: rotateAboutYWithYOffset 5s linear 0 1, rotateAboutXWithYOffset 5s linear 5s infinite;
+        animation: rotateAboutYWithYOffset 5s linear 0 1, rotateAboutXWithYOffset 5s linear 5s infinite;
+        
       }
       @-webkit-keyframes rotateAboutY {
         0% {
-          -webkit-transform: rotateY(45deg);
-          transform: rotateY(45deg);
+          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
         }
         100% {
-          -webkit-transform: rotateY(405deg);
-          transform: rotateY(405deg);
+          -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
         }
       }
       @keyframes rotateAboutY {
@@ -123,6 +130,46 @@
       }
       @-webkit-keyframes rotateAboutX {
         0% {
+          -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+        }
+        100% {
+          -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+        }
+      }
+      @keyframes rotateAboutX {
+        0% {
+          -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+        }
+        100% {
+          -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+        }
+      }
+      @-webkit-keyframes rotateAboutYWithYOffset {
+        0% {
+          -webkit-transform: rotateY(45deg);
+          transform: rotateY(45deg);
+        }
+        100% {
+          -webkit-transform: rotateY(405deg);
+          transform: rotateY(405deg);
+        }
+      }
+      @keyframes rotateAboutYWithYOffset {
+        0% {
+          -webkit-transform: rotateY(45deg);
+          transform: rotateY(405deg);
+        }
+        100% {
+          -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+        }
+      }
+      @-webkit-keyframes rotateAboutXWithYOffset {
+        0% {
           -webkit-transform: rotateY(45deg) rotateX(0deg);
           transform: rotateY(45deg) rotateX(0deg);
         }
@@ -131,7 +178,7 @@
           transform: rotateY(45deg) rotateX(360deg);
         }
       }
-      @keyframes rotateAboutX {
+      @keyframes rotateAboutXWithYOffset {
         0% {
           -webkit-transform: rotateY(45deg) rotateX(0deg);
           transform: rotateY(45deg) rotateX(0deg);
