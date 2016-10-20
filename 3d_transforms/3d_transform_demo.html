@@ -20,7 +20,7 @@
     height: 200px;
     background: #eee;
     margin: 50px 100px;    
-    -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);    
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);    
   }
   
   #mask {
@@ -29,7 +29,7 @@
     height: 160px;
     background: #333;  
     margin: 20px 40px;
-    -webkit-perspective: 500;
+    perspective: 500px;
   }
   
   #inner-rectangle {
@@ -38,15 +38,14 @@
     height: 150px;
     background: #eee;
     margin: 5px 5px;
-    -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
-    -webkit-transition: all 2s ease-in-out 0;
-    -webkit-transform: rotateX(90deg);
-/*    -webkit-transform-origin: top; */
-     opacity: 0.1;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    transition: all 200ms ease-in-out;
+    transform: rotateX(90deg);
+    opacity: 0.1;
   }
   
   #mask:hover #inner-rectangle {
-    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
     opacity: 1;
   }
 
