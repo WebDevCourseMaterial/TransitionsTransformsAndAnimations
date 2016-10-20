@@ -11,30 +11,16 @@
         overflow: hidden;
       }
       body {
-        display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: center;
         justify-content: center;
-        -webkit-align-items: center;
         align-items: center;
         background-color: #dd0;
       }
-	    .spinner {
+      .spinner {
         background-image: url('spinner.png');
         width: 200px;
         height: 200px;
-        -webkit-animation: spinning 1500ms linear infinite;
         animation: spinning 1500ms linear infinite;
-	    }
-      @-webkit-keyframes spinning {
-        0% {
-          -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
       }
       @keyframes spinning {
         0% {
@@ -49,7 +35,7 @@
     </style>
   </head>
   <body>
-	  <div class="spinner"></div>
+    <div class="spinner"></div>
   </body>
 </html>
     

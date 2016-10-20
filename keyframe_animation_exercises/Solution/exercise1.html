@@ -10,13 +10,9 @@
         margin: 0;
       }
       body {
-        display: -webkit-flex;
         display: flex;
-        -webkit-flex-flow: column;
         flex-flow: column;
-        -webkit-justify-content: center;
         justify-content: center;
-        -webkit-align-items: center;
         align-items: center;
         background: #222;
       }
@@ -26,88 +22,57 @@
         text-shadow: 2px 2px 2px gray;
         margin-bottom: 20px;
       }
-	    .lightbox,
-	    .poster {
-		    width: 184px;
-		    height: 275px;
-	    }
-	    .lightbox {
-	      box-shadow: 0 0 0 1px white, 0 0 0 4px black, 0 0 20px 8px yellow;
-	      overflow: hidden;
-	    }
-	    .poster {
+      .lightbox,
+      .poster {
+        width: 184px;
+        height: 275px;
+      }
+      .lightbox {
+        box-shadow: 0 0 0 1px white, 0 0 0 4px black, 0 0 20px 8px yellow;
+        overflow: hidden;
+      }
+      .poster {
         background-size: 100% 100%;
-	    }
-	    .posters {
-	      position: relative;
-	      -webkit-animation: posterSlide 15s ease infinite;
-	      animation: posterSlide 15s ease infinite;
-	    }
-			.poster:nth-child(1)  {
-			  background-image: url('ironman.jpg');
-			}
-			.poster:nth-child(2) {
+      }
+      .posters {
+        position: relative;
+        animation: posterSlide 15s ease infinite;
+      }
+      .poster:nth-child(1)  {
+        background-image: url('ironman.jpg');
+      }
+      .poster:nth-child(2) {
         background-image: url('matrix.jpg');
-			}
-			.poster:nth-child(3) {
+      }
+      .poster:nth-child(3) {
         background-image: url('jurassic_park.jpg');
-			}
-			.poster:nth-child(4) {
+      }
+      .poster:nth-child(4) {
         background-image: url('avatar.jpg');
-			}
+      }
       .poster:nth-child(5) {
         background-image: url('kung_fu_panda.jpg');
       }
       .poster:nth-child(6) {
         background-image: url('ironman.jpg');
       }
-      @-webkit-keyframes posterSlide {
-        0%, 10% {
-          top: 0;
-        }
-        20%, 30% {
-          top: -webkit-calc(-1*275px);
-          top: calc(-1*275px);
-        }
-        40%, 50% {
-          top: -webkit-calc(-2*275px);
-          top: calc(-2*275px);
-        }
-        60%, 70% {
-          top: -webkit-calc(-3*275px);
-          top: calc(-3*275px);
-        }
-        80%, 90% {
-          top: -webkit-calc(-4*275px);
-          top: calc(-4*275px);
-        }
-        100% {
-          top: -webkit-calc(-5*275px);
-          top: calc(-5*275px);
-        }
-      }
       @keyframes posterSlide {
         0%, 10% {
           top: 0;
         }
         20%, 30% {
-          top: -webkit-calc(-1*275px);
           top: calc(-1*275px);
         }
         40%, 50% {
-          top: -webkit-calc(-2*275px);
           top: calc(-2*275px);
         }
         60%, 70% {
-          top: -webkit-calc(-3*275px);
           top: calc(-3*275px);
         }
         80%, 90% {
-          top: -webkit-calc(-4*275px);
           top: calc(-4*275px);
         }
         100% {
-          top: -webkit-calc(-5*275px);
           top: calc(-5*275px);
         }
       }
@@ -115,16 +80,16 @@
   </head>
   <body>
     <div class="title">Movie posters</div>
-	  <div class="lightbox">
-	    <div class="posters">
-	      <div class="poster"></div>
-	      <div class="poster"></div>
-	      <div class="poster"></div>
-	      <div class="poster"></div>
-	      <div class="poster"></div>
+    <div class="lightbox">
+      <div class="posters">
+        <div class="poster"></div>
+        <div class="poster"></div>
+        <div class="poster"></div>
+        <div class="poster"></div>
+        <div class="poster"></div>
         <div class="poster"></div>
       </div>
-	  </div>
+    </div>
   </body>
 </html>
     
